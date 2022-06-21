@@ -1,0 +1,10 @@
+<h2>Buscar Generos</h2>
+<form action="/categories" method="GET">
+    <label>Nombre</label>
+    <input type="text" name="name" value="<%= vBusqueda.name %>">
+    <button type="submit">Buscar</button>
+</form>
+<br>
+<% categorias.forEach(categoria => { %>
+    <div><%= categoria.name %> </div>
+<% }) %>
